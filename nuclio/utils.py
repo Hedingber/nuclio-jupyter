@@ -174,6 +174,8 @@ def notebook_file_name(ikernel):
     from jupyter_server.serverapp import list_running_servers \
         as jp_list_running_servers
 
+    print("HI HEDI")
+
     file_name = environ.get('JUPYTER_NOTEBOOK_FILE_NAME')
     if file_name is not None:
         return file_name
